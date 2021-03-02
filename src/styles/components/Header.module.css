@@ -1,0 +1,18 @@
+.headerContainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 7rem;
+    background-color: var(--white);
+
+    border-bottom: 2px solid var(--orange-cbm);
+}
+
+.headerContainer .imgContainer{
+    padding: 1.5rem;
+    max-width: 10rem;
+}
+
+.headerContainer .imgContainer img{
+    width: 9rem;
+    height: 4rem;
+}

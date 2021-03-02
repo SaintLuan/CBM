@@ -1,0 +1,115 @@
+.navContainer{
+    display: grid;
+    grid-template-rows: 5rem 2fr;
+    cursor: pointer;
+
+    background-color: var(--orange-cbm);
+    color: var(--white);
+    
+    flex-direction: column;
+    min-height: 100vh;
+
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 16px 8px 8px;
+    width: 64px;
+    z-index: 14;
+    position: fixed;
+    transition: flex-basis 0.5s ease 0s, height 0.5s ease 0s, width 0.3s ease 0s;
+}
+
+.fullBar{
+    width: 19rem;
+}
+
+.collapsed{
+    width: 5rem;
+}
+
+.navContainer header{
+    height: 5rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.logo{
+    padding: 1rem;
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+.avatar{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+.navContainer > ul{
+    padding: 1.5rem 0.5rem;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navContainer > ul > li{
+    width:100%;
+    padding: 0.5rem;
+    margin: 0.2rem 0.5rem;
+
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.navContainer > ul > li > i{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    
+    text-align: initial;
+    justify-content: initial;
+}
+
+.navContainer > ul > li:hover{
+    background-color: var(--orange-light);
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+}
+  
+.dropdownContent{
+    display: none;
+    width: 100%;
+    top: 2.5rem;
+    left: -0.01rem;
+    position: absolute;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdownContent{
+    display: block;
+    width: 100%;
+    background-color: var(--orange-light);
+    border-radius: 10px;
+}
+
+.dropdown .dropdownContent :first-child{
+    margin-top: 1.5rem;
+}
+
+
+.dropdown .dropdownContent li{
+    padding: 0.5rem 3rem;
+}
+
