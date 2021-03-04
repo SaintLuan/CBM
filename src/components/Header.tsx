@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Nav } from './Nav';
-
 import styles from '../styles/components/Header.module.css'
 
 export function Header(){
@@ -11,7 +9,6 @@ export function Header(){
                 <a href=""><img src="icons/logo.png" alt="Logo CBM"/></a>
             </div>
 
-            <Nav />
         </header>
     );
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head';
-
-import { Nav } from '../components/Nav';
+import React from 'react';
+import { Header } from '../components/Header';
+import { Slider } from '../components/Slider';
 
 import styles from '../styles/pages/Home.module.css'
 
@@ -12,7 +13,8 @@ export default function Home() {
       </Head>
 
       <section>
-        <Nav />
+        <Header />
+        <Slider />
       </section>
       
     </section>

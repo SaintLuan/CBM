@@ -1,0 +1,12 @@
+.sliderContainer{
+    width: 100%;
+    height: 30vh;
+}
+
+.sliderContainer .slider{
+    width: 100%;
+}
+
+.sliderContainer .slider img{
+    width: 100%;
+}
