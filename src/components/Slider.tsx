@@ -22,15 +22,14 @@ export function Slider(){
         )}
         console.log(currentImg);
     }
-
     return(
-        <div className={styles.sliderContainer}>
+        <section className={styles.sliderContainer}>
             <div className={styles.slider}>
                 <img src={sliderData[currentImg].img} alt={sliderData[currentImg].alt}/>
-                <span onClick={goPrev} ><i className="uil uil-angle-left-b"></i></span>
-                <span onClick={goNext} ><i className="uil uil-angle-right-b"></i></span>
-                
+                <span onClick={goPrev} className={styles.arrowPrev} ><i className="uil uil-angle-left-b"></i></span>
+                <span onClick={goNext} className={styles.arrowNext} ><i className="uil uil-angle-right-b"></i></span>
             </div>
-        </div>
+
+        </section>
     )
 }

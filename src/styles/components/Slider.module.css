@@ -1,14 +1,39 @@
 .sliderContainer{
     width: 100%;
-    height: 50vh;
+    height: 20rem;
 }
 
-/* .sliderContainer .slider{
+.sliderContainer .slider{
     width: 100%;
-} */
+    height: 100%;
+}
 
 .sliderContainer .slider img{
     width: 100%;
-    transition: all .5s;
+    height: 100%;
+    position: relative;
 }
 
+
+.sliderContainer .slider span{
+    position: absolute;
+    top: 15rem;
+    z-index: 1;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: black;
+    opacity: 0.3;
+    font-size: 5rem;
+}
+
+.arrowPrev{
+    left: 0;
+}
+
+.arrowNext{
+    right: 0;
+}
