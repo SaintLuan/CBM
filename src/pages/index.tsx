@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
-import { Slider } from '../components/Slider';
+import { Slider } from '../components/Home/Slider';
 
 import styles from '../styles/pages/Home.module.css'
 

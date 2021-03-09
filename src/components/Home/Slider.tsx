@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import sliderData from '../../sliderData.json';
-import styles from '../styles/components/Slider.module.css';
+import sliderData from '../../../sliderData.json';
+import styles from '../../styles/components/Home/Slider.module.css'
 
 
 export function Slider(){
@@ -12,7 +12,6 @@ export function Slider(){
         ):(
             setCurrentImg(currentImg-1)
         )}
-        console.log(currentImg);
     }
     const goNext = () => {
         {currentImg===sliderData.length-1?(
@@ -20,7 +19,6 @@ export function Slider(){
         ):(
             setCurrentImg(currentImg+1)
         )}
-        console.log(currentImg);
     }
     return(
         <section className={styles.sliderContainer}>
