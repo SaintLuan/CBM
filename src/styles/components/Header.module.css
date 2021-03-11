@@ -1,8 +1,21 @@
 .headerContainer{
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+
     background: transparent;
-    transition: backgrond 0.3s;
+    transition: all .7s ease-in;
+}
+
+
+.fixed{
+    position: fixed;
+    background-color: var(--orange-cbm);
+    top: 0;
+    left: 0;
 }
 
 .headerContainer .imgContainer{
@@ -29,6 +42,7 @@
 
     font-size: 1rem;
     font-weight: 700;
+    color: var(--orange-cbm);
     text-transform: uppercase;
     cursor: pointer;
 
@@ -36,6 +50,6 @@
 }
 
 .headerContainer .navContainer > ul > li:hover{
-    color: var(--orange-cbm);
-    border-bottom: 2px solid var(--orange-cbm);
+    color: var(--orange-dark);
+    border-bottom: 2px solid var(--orange-dark);
 }

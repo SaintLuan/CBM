@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from '../styles/components/Header.module.css'
 
 export function Header(){
+    const [hasScroll, setScroll]=useState(false);
+
+    const handleScroll=() => {
+        const offset=window.scrollY;
+        if(offset > 100 ){
+          setScroll(true);
+        }
+        else{
+          setScroll(false);
+        }
+    }
+    
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+    })
+
     return(
-        <header className={styles.headerContainer}>
+        <header className={`${styles.headerContainer} ${hasScroll?styles.fixed :''}`}>
             <div className={styles.imgContainer}>
                 <a href=""><img src="icons/logo.png" alt="Logo CBM"/></a>
             </div>

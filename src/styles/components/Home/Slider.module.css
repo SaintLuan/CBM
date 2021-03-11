@@ -1,17 +1,22 @@
 .sliderContainer{
     width: 100%;
     height: 35rem;
+    
+    transition: all .7s ease-in;
 }
 
 .sliderContainer .slider{
     width: 100%;
     height: 100%;
+    transition: all .7s ease-in;
 }
 
 .sliderContainer .slider img{
     width: 100%;
     height: 100%;
     position: relative;
+    
+    transition: all .7s ease-in;
 }
 
 
