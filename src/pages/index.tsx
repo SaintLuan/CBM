@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Slider } from '../components/Home/Slider';
 
@@ -15,6 +16,7 @@ export default function Home() {
       <section>
         <Header />
         <Slider />
+        <Footer />
       </section>
       
     </section>

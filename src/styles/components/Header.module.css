@@ -15,7 +15,6 @@
     position: fixed;
     background-color: var(--orange-cbm);
     top: 0;
-    left: 0;
 }
 
 .headerContainer .imgContainer{

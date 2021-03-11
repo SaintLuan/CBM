@@ -1,0 +1,31 @@
+.footerContainer{
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerContainer .infosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+}
+
+.footerContainer .infosContainer .infos{
+    font-size: 2rem;
+    color: var(--orange-cbm);
+    cursor: pointer;
+}
+
+.footerContainer .infosContainer .infos span{
+    font-size: 1rem;
+    color: var(--orange-cbm);
+    cursor: text;
+}
+
+.footerContainer footer{
+    text-align: center;
+    color: var(--orange-cbm);
+}
