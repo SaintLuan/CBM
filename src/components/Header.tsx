@@ -6,7 +6,7 @@ export function Header(){
     const [hasScroll, setScroll]=useState(false);
 
     const handleScroll=() => {
-        const offset=window.scrollY;
+        const offset=window.pageYOffset;
         if(offset > 100 ){
           setScroll(true);
         }
@@ -33,7 +33,7 @@ export function Header(){
                     <li>Infraestrutura</li>
                     <li>Contatos</li>
                     <li>
-                        Área Reestrita
+                        Área Reestrita <i className="uil uil-angle-down"></i>
                         {/* <ul>
                             <li>Gestão Escolar</li>
                             <li>Ph Sistema de Ensino</li>

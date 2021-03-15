@@ -3,17 +3,17 @@
     grid-template-columns: 1fr 3fr;
 
     width: 100%;
-    min-height: 6vh;
+    min-height: 5vh;
     box-sizing: border-box;
 
-    background: transparent;
+    background-color: black;
     transition: all .7s ease-in;
-}
 
+}
 
 .fixed{
     position: fixed;
-    background-color: var(--orange-cbm);
+    background-color: black;
     top: 0;
 }
 
@@ -41,14 +41,19 @@
 
     font-size: 1rem;
     font-weight: 700;
-    color: var(--orange-cbm);
+    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
 
     border-bottom: 1px solid var(--orange-cbm);
+    transition: all .3s ease-in;
 }
 
 .headerContainer .navContainer > ul > li:hover{
     color: var(--orange-dark);
-    border-bottom: 2px solid var(--orange-dark);
+    border-bottom: 2px solid var(--orange-cbm);
+}
+
+.headerContainer .navContainer > ul > li i{
+    font-size: 1.5rem;
 }

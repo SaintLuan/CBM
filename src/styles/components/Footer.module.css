@@ -1,31 +1,75 @@
 .footerContainer{
     width: 100%;
-    height: 8rem;
+    height: 20rem;
     background-color: rgb(247, 247, 247);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
 .footerContainer .infosContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 2rem;
+    margin-left: 5rem;
+}
+
+.footerContainer .infos{
     padding: 1rem;
 }
 
-.footerContainer .infosContainer .infos{
+.footerContainer .infos h1{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--title);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--title);
+}
+
+.footerContainer .infos ul{
+    font-size: 1rem;
+    padding-top: 1rem;
+    color: var(--text);
+}
+
+/* =============== ABOUT =============== */
+.footerContainer .infosContainer .about{
+    width: 75%;
+}
+
+.footerContainer .infosContainer .about p{
+    font-size: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.socialMedia{
+    padding-top: 1rem;
+}
+
+.socialMedia i{
+    margin-right: 2rem;
     font-size: 2rem;
-    color: var(--orange-cbm);
     cursor: pointer;
 }
+/* ======================================= */
 
-.footerContainer .infosContainer .infos span{
-    font-size: 1rem;
-    color: var(--orange-cbm);
-    cursor: text;
+/* =============== LINKS =============== */
+.footerContainer .infosContainer .usefullLinks{
+    width: 75%;
 }
+/* ======================================= */
+
+/* =============== CONTACTS =============== */
+.footerContainer .infosContainer .contacts{
+    width: 50%;
+}
+/* ======================================= */
 
 .footerContainer footer{
+    height: 3rem;
+    background-color: rgb(49, 49, 49);
     text-align: center;
-    color: var(--orange-cbm);
+    vertical-align: middle;
+}
+.footerContainer span{
+    color: #fff;
 }
