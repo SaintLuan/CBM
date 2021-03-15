@@ -7,7 +7,7 @@ export function Header(){
 
     const handleScroll=() => {
         const offset=window.pageYOffset;
-        if(offset > 100 ){
+        if(offset > 75 ){
           setScroll(true);
         }
         else{
