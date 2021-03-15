@@ -1,24 +1,19 @@
 .headerContainer{
-    height: 80px;
+    height: 7rem;
     width: 100%;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+
+    z-index: 99999;
+    overflow: hidden;
+    position:absolute;
     transition: all .3s ease-in;
+
 }
 
 .fixed{
     position: fixed;
     background-color: black;
-    color: #fff;
-    top: 0;
-}
-
-.fixed > ul > li{
     color: #fff;
 }
 
@@ -32,11 +27,18 @@
     height: 4rem;
 }
 
+.headerContainer .menuBtn{
+    font-size: 5rem;
+    color: var(--orange-cbm);
+    transition: all 0.3s ease-in-out;
+}
+
 .headerContainer .navContainer{
     margin: 2.5rem;
     margin-left: 20rem;
     float: right;
     left: 2rem;
+    
 }
 
 .headerContainer .navContainer > ul > li{
@@ -44,13 +46,13 @@
     margin: 0 0.5rem;
 
     font-size: 1rem;
-    font-weight: 700;
-    color: var(--orange-cbm);
+    font-weight: 800;
+    color: #000;
     text-transform: uppercase;
     cursor: pointer;
 
     border-bottom: 1px solid var(--orange-cbm);
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 
 .headerContainer .navContainer > ul > li:hover{
@@ -60,4 +62,13 @@
 
 .headerContainer .navContainer > ul > li i{
     font-size: 1.5rem;
+}
+
+.headerContainer .navContainerFixed > ul > li{
+    color: var(--white);
+}
+
+.headerContainer .navContainerFixed > ul > li:hover{
+    color: var(--orange-dark);
+    border-bottom: 2px solid var(--orange-cbm);
 }

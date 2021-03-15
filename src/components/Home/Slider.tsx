@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import sliderData from '../../../sliderData.json';
 import styles from '../../styles/components/Home/Slider.module.css'
 
@@ -20,6 +20,12 @@ export function Slider(){
             setCurrentImg(currentImg+1)
         )}
     }
+
+    // useEffect (() =>{
+    //     setInterval(()=>{
+    //         goNext();
+    //     },5000)
+    // })
     return(
         <section className={styles.sliderContainer}>
             <div className={styles.slider}>
@@ -28,8 +34,8 @@ export function Slider(){
                 <span onClick={goNext} className={styles.arrowNext} ><i className="uil uil-angle-right-b"></i></span>
             
 
-                <h1>ADVENTURE AWAITS</h1>
-                <p>What are you waiting for?</p>
+                {/* <h1>ADVENTURE AWAITS</h1>
+                <p>What are you waiting for?</p> */}
             </div>
 
         </section>

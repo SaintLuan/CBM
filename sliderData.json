@@ -1,18 +1,14 @@
 [
     {
-        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/http://colegio.bragamello.com.br/wp-content/uploads/2019/12/capa-infantil-04.jpg",
+        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://colegio.bragamello.com.br/wp-content/uploads/2020/11/banner_rematricula.png",
         "alt":"CapaInfantil"
     },
     {
-        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/http://colegio.bragamello.com.br/wp-content/uploads/2019/12/cAPA-FUNDAMENTAL-1-02.jpg",
+        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://colegio.bragamello.com.br/wp-content/uploads/2020/05/banner_castelo_cores.png",
         "alt":"CapaFund1"
     },
     {
-        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/http://colegio.bragamello.com.br/wp-content/uploads/2019/12/cAPA-FUNDAMENTAL-2-03.jpg",
+        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://colegio.bragamello.com.br/wp-content/uploads/2020/05/banner_ie.png",
         "alt":"CapaFund2"
-    },
-    {
-        "img":"https://cdn.shortpixel.ai/client/q_lossy,ret_img/http://colegio.bragamello.com.br/wp-content/uploads/2019/12/capa-Ensino-m%C3%A9dio-01.jpg",
-        "alt":"CapaEM"
     }
 ]

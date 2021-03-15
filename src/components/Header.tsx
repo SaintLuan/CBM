@@ -4,7 +4,10 @@ import styles from '../styles/components/Header.module.css'
 
 export function Header(){
     const [hasScroll, setScroll]=useState(false);
+    const [menuBtn, setMenuBtn]=useState(false);
+    const  [menuClicked, setMenuClick]=useState(false);
 
+    // ##### CONTROLE DO HEADER (TRANSPARÊNCIA) #####
     const handleScroll=() => {
         const offset=window.pageYOffset;
         if(offset > 75 ){
@@ -19,13 +22,26 @@ export function Header(){
         window.addEventListener('scroll',handleScroll)
     })
 
+    // ##### CONTROLE DO MOBILE MENU #####
+    const handleClick = () => setMenuClick(!menuClicked);
+    const closeMobileMenu = () => setMenuClick(false);
+
+    const showBtn = () =>{
+        window.innerWidth<=960 &&( setMenuBtn(true))
+    }
+  
+
     return(
         <header className={`${styles.headerContainer} ${hasScroll?styles.fixed :''}`}>
             <div className={styles.imgContainer}>
                 <a href=""><img src="icons/logo.png" alt="Logo CBM"/></a>
             </div>
 
-            <nav className={styles.navContainer}>
+            <div className={styles.menuBtn} onClick={handleClick}>
+                {menuClicked ? <i className="uil uil-multiply"></i> : <i className="uil uil-bars"></i>}
+            </div>
+
+            <nav className={`${styles.navContainer} ${hasScroll?styles.navContainerFixed : ''}`}>
                 <ul>
                     <li>Início</li>
                     <li>História</li>
