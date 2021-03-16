@@ -1,4 +1,4 @@
-import styles from '../styles/components/footer.module.css';
+import styles from '../styles/components/footer.module.scss';
 export function Footer() {
     return(
         <footer className={styles.footerContainer}>

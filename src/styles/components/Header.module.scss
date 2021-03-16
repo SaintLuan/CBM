@@ -1,5 +1,5 @@
 .headerContainer{
-    height: 7rem;
+    height: 5rem;
     width: 100%;
 
     display: flex;
@@ -18,8 +18,9 @@
 }
 
 .headerContainer .imgContainer{
-    padding: 1.5rem;
+    padding: 0.5rem;
     max-width: 10rem;
+    margin-left: 2rem;
 }
 
 .headerContainer .imgContainer img{
@@ -34,9 +35,8 @@
 }
 
 .headerContainer .navContainer{
-    margin: 2.5rem;
-    margin-left: 20rem;
-    float: right;
+    margin: 1.5rem;
+    margin-left: 30rem;
     left: 2rem;
     
 }

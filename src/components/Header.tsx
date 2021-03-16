@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import styles from '../styles/components/Header.module.css'
+import styles from '../styles/components/Header.module.scss'
 
 export function Header(){
     const [hasScroll, setScroll]=useState(false);
@@ -26,10 +26,21 @@ export function Header(){
     const handleClick = () => setMenuClick(!menuClicked);
     const closeMobileMenu = () => setMenuClick(false);
 
-    const showBtn = () =>{
-        window.innerWidth<=960 &&( setMenuBtn(true))
-    }
-  
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+          setMenuBtn(false);
+        } else {
+          setMenuBtn(true);
+        }
+      };
+    
+      useEffect(() => {
+        showButton();
+        window.addEventListener('resize', showButton);
+        return (
+          window.removeEventListener('resize', showButton)
+        )
+      }, []);
 
     return(
         <header className={`${styles.headerContainer} ${hasScroll?styles.fixed :''}`}>
@@ -37,30 +48,34 @@ export function Header(){
                 <a href=""><img src="icons/logo.png" alt="Logo CBM"/></a>
             </div>
 
-            <div className={styles.menuBtn} onClick={handleClick}>
-                {menuClicked ? <i className="uil uil-multiply"></i> : <i className="uil uil-bars"></i>}
-            </div>
+            {
+                !menuBtn ? (
+                    <div className={styles.menuBtn} onClick={handleClick}>
+                        {menuClicked ? <i className="uil uil-multiply"></i> : <i className="uil uil-bars"></i>}
+                    </div>
+                ):(
+                    <nav className={`${styles.navContainer} ${hasScroll?styles.navContainerFixed : ''}`}>
+                        <ul>
+                            <li>Início</li>
+                            <li>História</li>
+                            <li>Proposta Pedgógica</li>
+                            <li>Infraestrutura</li>
+                            <li>Contatos</li>
+                            <li>
+                                Área Reestrita <i className="uil uil-angle-down"></i>
+                                {/* <ul>
+                                    <li>Gestão Escolar</li>
+                                    <li>Ph Sistema de Ensino</li>
+                                    <li>Plurall</li>
+                                    <li>Portal do aluno</li>
+                                    <li>WebMail</li>
+                                </ul> */}
+                            </li>
 
-            <nav className={`${styles.navContainer} ${hasScroll?styles.navContainerFixed : ''}`}>
-                <ul>
-                    <li>Início</li>
-                    <li>História</li>
-                    <li>Proposta Pedgógica</li>
-                    <li>Infraestrutura</li>
-                    <li>Contatos</li>
-                    <li>
-                        Área Reestrita <i className="uil uil-angle-down"></i>
-                        {/* <ul>
-                            <li>Gestão Escolar</li>
-                            <li>Ph Sistema de Ensino</li>
-                            <li>Plurall</li>
-                            <li>Portal do aluno</li>
-                            <li>WebMail</li>
-                        </ul> */}
-                    </li>
-
-                </ul>
-            </nav>
+                        </ul>
+                    </nav>
+                )
+            }
 
         </header>
     );

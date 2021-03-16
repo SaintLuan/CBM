@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import sliderData from '../../../sliderData.json';
-import styles from '../../styles/components/Home/Slider.module.css'
-
+import styles from '../../styles/components/Home/Slider.module.scss'
 
 export function Slider(){
     const [currentImg, setCurrentImg]=useState(0);
@@ -20,12 +19,7 @@ export function Slider(){
             setCurrentImg(currentImg+1)
         )}
     }
-
-    // useEffect (() =>{
-    //     setInterval(()=>{
-    //         goNext();
-    //     },5000)
-    // })
+ 
     return(
         <section className={styles.sliderContainer}>
             <div className={styles.slider}>
