@@ -1,75 +1,69 @@
 .footerContainer{
-    width: 100%;
     height: 20rem;
     background-color: rgb(247, 247, 247);
-}
 
-.footerContainer .infosContainer{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding-top: 2rem;
-    margin-left: 5rem;
-}
+    .infosContainer{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding-top: 2rem;
+        margin-left: 5rem;
 
-.footerContainer .infos{
-    padding: 1rem;
-}
+        .infos{
+            padding: 1rem;
+            
+            h1{
+                font-size: 1.5rem;
+                padding-top: 1rem;
+                color: var(--title);
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid var(--title);
+            }
 
-.footerContainer .infos h1{
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    color: var(--title);
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--title);
-}
+            ul{
+                font-size: 1rem;
+                padding-top: 1rem;
+                color: var(--text);
+            }       
+        }
 
-.footerContainer .infos ul{
-    font-size: 1rem;
-    padding-top: 1rem;
-    color: var(--text);
-}
+        .about{
+            width: 75%;
 
-/* =============== ABOUT =============== */
-.footerContainer .infosContainer .about{
-    width: 75%;
-}
+            p{
+                font-size: 1rem;
+                justify-content: center;
+                padding-top: 1rem;
+                text-align: justify;
+            }
 
-.footerContainer .infosContainer .about p{
-    font-size: 1rem;
-    justify-content: center;
-    padding-top: 1rem;
-    text-align: justify;
-}
+            .socialMedia{
+                padding-top: 1rem;
 
-.socialMedia{
-    padding-top: 1rem;
-}
+                i{
+                    margin-right: 2rem;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
 
-.socialMedia i{
-    margin-right: 2rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-/* ======================================= */
+        .usefullLinks{
+            width: 75%;
+        }
 
-/* =============== LINKS =============== */
-.footerContainer .infosContainer .usefullLinks{
-    width: 75%;
-}
-/* ======================================= */
+        .contacts{
+            width: 50%;
+        }
+    }
 
-/* =============== CONTACTS =============== */
-.footerContainer .infosContainer .contacts{
-    width: 50%;
-}
-/* ======================================= */
+    footer{
+        height: 3rem;
+        background-color: rgb(49, 49, 49);
+        text-align: center;
+        vertical-align: middle;
 
-.footerContainer footer{
-    height: 3rem;
-    background-color: rgb(49, 49, 49);
-    text-align: center;
-    vertical-align: middle;
-}
-.footerContainer span{
-    color: #fff;
-}
+        span{
+            color: #fff;
+        }
+    }
+} 
