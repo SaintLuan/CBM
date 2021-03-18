@@ -1,9 +1,11 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/components/Card.module.scss'
+import FadeComponent from './FadeComponent';
 
 export function Card(){
     return(
-        <>
-            <div className={`${styles.cardContainer} ${styles.animated} ${styles.animatedFadeInUp} ${styles.fadeInUp}`}>
+        <FadeComponent direction="right" delay={2}>
+            <div className={`${styles.cardContainer}`}>
                 <div className={styles.icon}>
                     <i className="uil uil-map-marker"></i>
                 </div>
@@ -11,9 +13,7 @@ export function Card(){
                 <h1>
 
                 </h1>
-
-
             </div>
-        </>
+        </FadeComponent>
     );
 }
