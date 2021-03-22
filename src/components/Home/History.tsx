@@ -1,6 +1,5 @@
 import styles from '../../styles/components/Home/History.module.scss';
 import { Card } from '../Card';
-import FadeComponent from '../FadeComponent';
 
 export function History(){
     return(
