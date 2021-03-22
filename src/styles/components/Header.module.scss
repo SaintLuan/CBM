@@ -9,66 +9,66 @@
     position:absolute;
     transition: all .3s ease-in;
 
+    .imgContainer{
+        padding: 0.5rem;
+        max-width: 10rem;
+        margin-left: 2rem;
+
+        img{
+            width: 9rem;
+            height: 4rem;
+        }
+    }
+
+    .menuBtn{
+        font-size: 5rem;
+        color: var(--orange-cbm);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navContainer{
+        margin: 1.5rem;
+        margin-left: 30rem;
+        left: 2rem;
+        
+    }
+
+    .navContainer > ul > li{
+        display: inline;
+        margin: 0 0.5rem;
+    
+        font-size: 1rem;
+        font-weight: 800;
+        color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+    
+        border-bottom: 1px solid var(--orange-cbm);
+        transition: all .2s ease-in;
+
+        i{
+            font-size: 1.5rem;
+        }
+
+        &:hover{
+            color: var(--orange-dark);
+            border-bottom: 2px solid var(--orange-cbm);
+        }
+    }
+
+    .navContainerFixed > ul > li{
+        color: var(--white);
+
+        &:hover{
+            color: var(--orange-dark);
+            border-bottom: 2px solid var(--orange-cbm);
+        }
+    }
+
 }
 
 .fixed{
     position: fixed;
     background-color: black;
     color: #fff;
-}
-
-.headerContainer .imgContainer{
-    padding: 0.5rem;
-    max-width: 10rem;
-    margin-left: 2rem;
-}
-
-.headerContainer .imgContainer img{
-    width: 9rem;
-    height: 4rem;
-}
-
-.headerContainer .menuBtn{
-    font-size: 5rem;
-    color: var(--orange-cbm);
-    transition: all 0.3s ease-in-out;
-}
-
-.headerContainer .navContainer{
-    margin: 1.5rem;
-    margin-left: 30rem;
-    left: 2rem;
-    
-}
-
-.headerContainer .navContainer > ul > li{
-    display: inline;
-    margin: 0 0.5rem;
-
-    font-size: 1rem;
-    font-weight: 800;
-    color: #000;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    border-bottom: 1px solid var(--orange-cbm);
-    transition: all .2s ease-in;
-}
-
-.headerContainer .navContainer > ul > li:hover{
-    color: var(--orange-dark);
-    border-bottom: 2px solid var(--orange-cbm);
-}
-
-.headerContainer .navContainer > ul > li i{
-    font-size: 1.5rem;
-}
-
-.headerContainer .navContainerFixed > ul > li{
-    color: var(--white);
-}
-
-.headerContainer .navContainerFixed > ul > li:hover{
-    color: var(--orange-dark);
-    border-bottom: 2px solid var(--orange-cbm);
 }
