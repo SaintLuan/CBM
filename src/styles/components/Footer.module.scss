@@ -6,23 +6,29 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         padding-top: 2rem;
-        margin-left: 5rem;
-
         .infos{
             padding: 1rem;
-            
+            padding-left: 5rem;
             h1{
                 font-size: 1.5rem;
                 padding-top: 1rem;
-                color: var(--title);
+                color: var(--orange-cbm);
                 padding-bottom: 0.5rem;
-                border-bottom: 1px solid var(--title);
+                border-bottom: 1px solid var(--orange-cbm);
             }
 
             ul{
                 font-size: 1rem;
                 padding-top: 1rem;
                 color: var(--text);
+
+                li{
+                    &:hover{
+                        color: var(--orange-cbm);
+                        cursor: pointer;
+                        font-weight: 700;
+                    }
+               }
             }       
         }
 
@@ -43,12 +49,17 @@
                     margin-right: 2rem;
                     font-size: 2rem;
                     cursor: pointer;
+
+                    &:hover{
+                        color: var(--orange-cbm);
+                        cursor: pointer;
+                    }
                 }
             }
         }
 
         .usefullLinks{
-            width: 75%;
+            width: 75%; 
         }
 
         .contacts{
@@ -56,13 +67,16 @@
         }
     }
 
-    footer{
-        height: 3rem;
+    .bottom{
+        height: 5rem;
         background-color: rgb(49, 49, 49);
         text-align: center;
+        justify-content: center;
         vertical-align: middle;
 
         span{
+            padding-top: 1rem;
+            vertical-align: middle;
             color: #fff;
         }
     }

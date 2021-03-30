@@ -19,7 +19,7 @@ export function Card(){
             </div>
 
             <h1>
-                
+                                    
             </h1>
         </div>
             

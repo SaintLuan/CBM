@@ -44,10 +44,11 @@ export function Footer() {
 
                 
             </section>
-            <footer>
+            <section className={styles.bottom}>
                 <span>© 2021 COLÉGIO BRAGA MELLO</span>
+                <br/>
                 <span>Todos os Direitos Reservados</span>
-            </footer>
+            </section>
         </footer>
     );
 };

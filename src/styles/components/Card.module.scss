@@ -1,45 +1,25 @@
 .cardContainer{
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+    margin: 1rem;
     background-color: var(--white);
-    width: 25rem;
-    height: 35rem;
-    border-radius: 50px;
-
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    margin-left: 5rem;
+    border-radius: 25px;
 
     .icon{
-        width: 5rem;
-        height: 5rem;
-
-        display: inline-block;
         text-align: center;
-        vertical-align:middle;
-        display:table-cell;
-        
-
-        border: solid 10px var(--background);
-        border-radius: 50px;
-        background-color: var(--text);
-        
+        padding-top: 1.5rem;
         i{
-            font-size: 2.5rem;
-            margin-top: 0.2rem;
-            color: var(--white);
+            font-size: 3rem;
+            color: var(--orange-cbm);
+            border: solid 3px var(--orange-cbm);
+            border-radius: 100px;
         }
     }
 
     &:hover{
-        -webkit-box-shadow: 2px -1px 58px 5px rgba(143,143,143,1);
-        -moz-box-shadow: 2px -1px 58px 5px rgba(143,143,143,1);
-        box-shadow: 2px -1px 58px 5px rgba(143,143,143,1);
-        
-        -webkit-transition: all;
-        transition: all 0.1s ease-in-out;
-
+        transition: 0.5s;
+        box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
 }
